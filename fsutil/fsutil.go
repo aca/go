@@ -5,8 +5,18 @@ import (
 	"strings"
 )
 
-func Filename(filename string) string {
+func FilenameWithComma(filename string) string {
 	return strings.TrimSuffix(filename, filepath.Ext(filename))
+}
+
+func Filename(filename string) string {
+	filename = filepath.Base(filename)
+	splitted := strings.Split(filename, ".")
+	if len(splitted) == 0 {
+		return ""
+	} else {
+		return splitted[0]
+	}
 }
 
 func Ext(filename string) string {
@@ -22,12 +32,3 @@ func ExtWithComma(filename string) string {
 	return filename[i:]
 }
 
-func FilenameWithComma(filename string) string {
-	filename = filepath.Base(filename)
-	splitted := strings.Split(filename, ".")
-	if len(splitted) == 0 {
-		return ""
-	} else {
-		return splitted[0]
-	}
-}
