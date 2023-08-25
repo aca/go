@@ -8,7 +8,7 @@ func TestEqual(t *testing.T) {
 		t.Log(err)
 	}
 
-	err = EqualMsg("john", "james", "names")
+	err = EqualM("john", "james", "names")
 	if err != nil {
 		t.Log(err)
 	}
