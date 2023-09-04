@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/aca/go/netutil"
+	"github.com/aca/go/exp/netutil"
 )
 
 func main(){

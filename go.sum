@@ -1,5 +1,3 @@
-github.com/WAY29/icecream-go v0.0.0-20220610003735-798113558438 h1:czy6W0PEpB4rJy5ZxUO2pMkSVsMWz7OeeScoBsuf3hw=
-github.com/WAY29/icecream-go v0.0.0-20220610003735-798113558438/go.mod h1:Z3QDDjR3TGo1/hq7jSa91zrxdct0JMgmyROEdcrgd5M=
 github.com/oklog/ulid/v2 v2.1.0 h1:+9lhoxAP56we25tyYETBBY1YLA2SaoLvUFgrP2miPJU=
 github.com/oklog/ulid/v2 v2.1.0/go.mod h1:rcEKHmBBKfef9DhnvX7y1HZBYxjXb0cP5ExxNsTT1QQ=
 github.com/pborman/getopt v0.0.0-20170112200414-7148bc3a4c30/go.mod h1:85jBQOZwpVEaDAr341tbn15RS4fCAsIst0qp7i8ex1o=
@@ -7,8 +5,7 @@ github.com/samber/lo v1.38.1 h1:j2XEAqXKb09Am4ebOg31SpvzUTTs6EN3VfgeLUhPdXM=
 github.com/samber/lo v1.38.1/go.mod h1:+m/ZKRl6ClXCE2Lgf3MsQlWfh4bn1bz6CXEOxnEXnEA=
 github.com/samber/oops v1.7.0 h1:c02zMvhwtGwiviSiY8WYcumrNT4YkAJ5gBiktT4OKDU=
 github.com/samber/oops v1.7.0/go.mod h1:xEXk4BLyqajkvCxzpxBnqfzHzRLFk3+g4E+tOJtOPZY=
-github.com/shurcooL/go v0.0.0-20200502201357-93f07166e636/go.mod h1:TDJrrUr11Vxrven61rcy3hJMUqaf/CLWYhHNPmT14Lk=
-github.com/shurcooL/go v0.0.0-20230706063926-5fe729b41b3a h1:ZHfoO7ZJhws9NU1kzZhStUnnVQiPtDe1PzpUnc6HirU=
-github.com/shurcooL/go v0.0.0-20230706063926-5fe729b41b3a/go.mod h1:DNrlr0AR9NsHD/aoc2pPeu4uSBZ/71yCHkR42yrzW3M=
 golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17 h1:3MTrJm4PyNL9NBqvYDSj3DHl46qQakyfqfWo4jgfaEM=
 golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17/go.mod h1:lgLbSvA5ygNOMpwM/9anMpWVlVJ7Z+cHWq/eFuinpGE=
+golang.org/x/text v0.13.0 h1:ablQoSUd0tRdKxZewP80B+BaqeKJuVhuRxj/dkrun3k=
+golang.org/x/text v0.13.0/go.mod h1:TvPlkZtksWOMsz7fbANvkp4WM8x/WCo/om8BMLbz+aE=
