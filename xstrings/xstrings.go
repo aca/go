@@ -17,7 +17,7 @@ func Decode_EUCKR_Bytes(b []byte) ([]byte, error) {
 	return euckrDecoder.Bytes(b)
 }
 
-func Decode_EUCKR_Strings(s string) (string, error) {
+func Decode_EUCKR_String(s string) (string, error) {
 	defer func() {
 		euckrDecoder.Reset()
 	}()
