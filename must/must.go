@@ -17,7 +17,7 @@ func EqualM[T comparable](got T, want T, msg string) error {
 		return nil
 	}
 
-	return fmt.Errorf("got %#v, want %#v, msg: %s", msg, got, want)
+	return fmt.Errorf("got %#v, want %#v, msg: %s", got, want, msg)
 }
 
 func EqualE[T comparable](got T, want T, err error) error {
