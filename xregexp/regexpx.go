@@ -1,4 +1,4 @@
-package xregexp
+package regexpx
 
 import (
 	"fmt"
