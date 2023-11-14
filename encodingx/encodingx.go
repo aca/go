@@ -1,4 +1,4 @@
-package xstrings
+package encodingx
 
 import (
 	"io"
@@ -10,7 +10,14 @@ var euckrDecoder = korean.EUCKR.NewDecoder()
 var euckrEncoder = korean.EUCKR.NewEncoder()
 
 func Decode_EUCKR_Bytes(b []byte) ([]byte, error) {
+<<<<<<<< HEAD:encodingx/euckr.go
 	return korean.EUCKR.NewDecoder().Bytes(b)
+========
+	defer func() {
+		euckrDecoder.Reset()
+	}()
+	return euckrDecoder.Bytes(b)
+>>>>>>>> ad8d2cd ():encodingx/encodingx.go
 }
 
 func Decode_EUCKR_String(s string) (string, error) {

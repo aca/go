@@ -1,4 +1,4 @@
-package xstrings
+package encodingx
 
 import (
 	"testing"

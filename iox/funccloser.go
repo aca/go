@@ -1,4 +1,4 @@
-package xio
+package iox
 
 import "io"
 

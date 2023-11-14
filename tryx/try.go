@@ -122,7 +122,7 @@
 //		})
 //		...
 //	}
-package try
+package tryx
 
 import (
 	"errors"
