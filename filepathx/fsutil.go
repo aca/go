@@ -1,4 +1,4 @@
-package fsutil
+package filepathx
 
 import (
 	"path/filepath"
