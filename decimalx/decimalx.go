@@ -51,3 +51,12 @@ func New(coeff int64, exponent int32) Decimal {
 func (x Decimal) String() string {
 	return x.Decimal.Text('f')
 }
+
+func FromString(input string) Decimal {
+	v := Decimal{}
+	_, _, err := v.Decimal.SetString(input)
+	if err != nil {
+		panic(err)
+	}
+	return v
+}
