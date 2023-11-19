@@ -38,3 +38,11 @@ func TestDecimal_Minus(t *testing.T) {
 	x := New(1, -5)
 	require.Equal(t, Zero.Minus(x).String(), "-0.00001")
 }
+
+func TestDecimal_Div(t *testing.T) {
+	x := New(2, -5)
+	y := New(2, 0)
+	require.Equal(t, y.String(), "2")
+	require.Equal(t, x.String(), "0.00002")
+	require.Equal(t, x.Div(y).String(), "0.00001")
+}

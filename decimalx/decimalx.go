@@ -6,9 +6,19 @@ type Decimal struct {
 	apd.Decimal
 }
 
-var Context = apd.BaseContext
+var Context = apd.Context{
+	// Disable rounding.
+	Precision: 8,
+	// MaxExponent and MinExponent are set to the packages's limits.
+	MaxExponent: apd.MaxExponent,
+	MinExponent: apd.MinExponent,
+	// Default error conditions.
+	Traps: apd.DefaultTraps,
+}
 
-var Zero = Decimal{}
+var Zero = Decimal{
+
+}
 
 func (x Decimal) Add(y Decimal) Decimal {
 	_, err := Context.Add(&x.Decimal, &x.Decimal, &y.Decimal)
@@ -23,6 +33,15 @@ func (x Decimal) Minus(y Decimal) Decimal {
 	v.Decimal.Set(&y.Decimal)
 	v.Decimal.Neg(&v.Decimal)
 	return x.Add(v)
+}
+
+func (d Decimal) Div(b Decimal) Decimal {
+	v := Decimal{}
+	_, err := Context.Quo(&v.Decimal, &d.Decimal, &b.Decimal)
+	if err != nil {
+		panic(err)
+	}
+	return v
 }
 
 func (x Decimal) IsSmaller(y Decimal) bool {
@@ -60,3 +79,4 @@ func FromString(input string) Decimal {
 	}
 	return v
 }
+
