@@ -13,6 +13,7 @@ require (
 require (
 	github.com/cockroachdb/apd/v3 v3.2.1 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/jszwec/csvutil v1.8.0 // indirect
 	github.com/oklog/ulid/v2 v2.1.0 // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
 	github.com/samber/lo v1.38.1 // indirect
