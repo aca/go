@@ -1,6 +1,7 @@
 package regexpx
 
 import (
+	"regexp"
 	"testing"
 )
 
@@ -11,7 +12,7 @@ func TestMatchMap(t *testing.T) {
 		t.Logf("%#v", matched)
 	}
 	{
-		compiled := `/web/(?P<id>\d+)/(?P<title>.*)`
+		compiled := regexp.MustCompile(`/web/(?P<id>\d+)/(?P<title>.*)`)
 		matched2 := MatchMap(compiled, `/web/3241/xx`)
 		t.Logf("%#v", matched2)
 	}
