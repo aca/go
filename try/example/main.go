@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/aca/go/must"
-	try "github.com/aca/go/tryx"
+	"github.com/aca/go/try"
 )
 
 func main(){

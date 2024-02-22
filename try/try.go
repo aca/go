@@ -122,14 +122,14 @@
 //		})
 //		...
 //	}
-package tryx
+package try
 
 import (
 	"errors"
 	"runtime"
 	"strconv"
 
-	"github.com/samber/oops"
+	"github.com/aca/throw"
 )
 
 // wrapError wraps an error to ensure that we only recover from errors
@@ -202,11 +202,11 @@ func F(fn func(...any)) {
 	r(recover(), func(w wrapError) { f(fn, w) })
 }
 
-var oErr = &oops.OopsError{}
+var oErr = &throw.ThrowError{}
 
 func e(err error) {
 	if !errors.As(err, oErr) {
-		err = oops.Wrap(err)
+		err = throw.Wrap(err)
 	}
 
 	we := wrapError{error: err}

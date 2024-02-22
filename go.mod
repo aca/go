@@ -3,10 +3,10 @@ module github.com/aca/go
 go 1.21
 
 require (
+	github.com/aca/throw v0.0.0-20240214045118-9b20b0b5387e
 	github.com/cockroachdb/apd/v3 v3.2.1
 	github.com/noborus/trdsql v0.13.0
 	github.com/samber/lo v1.39.0
-	github.com/samber/oops v1.9.1
 	github.com/stretchr/testify v1.8.4
 	golang.org/x/exp v0.0.0-20231206192017-f3f8817b8deb
 	golang.org/x/text v0.14.0
@@ -37,7 +37,6 @@ require (
 	github.com/multiprocessio/go-sqlite3-stdlib v0.0.0-20220822170115-9f6825a1cd25 // indirect
 	github.com/noborus/guesswidth v0.3.4 // indirect
 	github.com/noborus/tbln v0.0.2 // indirect
-	github.com/oklog/ulid/v2 v2.1.0 // indirect
 	github.com/olekukonko/tablewriter v0.0.5 // indirect
 	github.com/pierrec/lz4 v2.6.1+incompatible // indirect
 	github.com/pmezard/go-difflib v1.0.0 // indirect
